@@ -44,6 +44,19 @@ function preload() {
     pnb = loadImage('assets/PNB.png'); 
     bw = loadImage('assets/BW.png'); 
     hme = loadImage('assets/home.png'); 
+  
+    misty = loadImage('assets/ABT/misty1.png'); 
+    herman = loadImage('assets/ABT/herman.png'); 
+    russel = loadImage('assets/SAB/russel.png'); 
+    tiler = loadImage('assets/SAB/tiler.png'); 
+    sara = loadImage('assets/SAB/sara.png'); 
+    ulrik = loadImage('assets/SFB/ulrik.png'); 
+    mathilde = loadImage('assets/SFB/mathilde.png'); 
+    noelani = loadImage('assets/PNB/noelani.png'); 
+    jerome = loadImage('assets/PNB/jerome.png'); 
+    chasebeck = loadImage('assets/BW/chase_beckanne.png'); 
+
+
 
   //---ABT---
     abtArray[1] = loadImage('assets/ABT/abtOne.png'); 
@@ -136,6 +149,9 @@ function drawABT(){
     background(255, 25);
     image(abt, width/2 - 400, height/2 - 400, 800, 800);
     image(abtArray[index], width/2 - 400, height/2 - 400, 800, 800); 
+    image(misty, width/2 - 270, height/2 - 440, 800, 800);
+    image(herman, width/2 - 500, height/2 - 75, 800, 800);
+
      
 
 
@@ -149,7 +165,11 @@ function drawSAB(){
     background(255);
     image(sab, width/2 - 400, height/2 - 400, 800, 800);
     image(sabArray[index], width/2 - 400, height/2 - 400, 800, 800); 
-    
+    image(russel, width/2 - 300, height/2 - 365, 800, 800);
+    // image(tiler, width/2 - 300, height/2 - 570, 700, 700);
+    image(sara, width/2 - 500, height/2 - 360, 800, 800);
+
+
     
 }
 
@@ -159,7 +179,10 @@ function drawSFB(){
     noTint();
     background(255);
     image(sfb, width/2 - 400, height/2 - 400, 800, 800);
-    image(sfbArray[index], width/2 - 400, height/2 - 400, 800, 800); 
+    image(sfbArray[index], width/2 - 400, height/2 - 400, 800, 800);
+    image(ulrik, width/2 - 400, height/2 - 400, 800, 800);
+    image(mathilde, width/2 - 400, height/2 - 400, 800, 800);
+
     
 
 }
@@ -171,6 +194,9 @@ function drawPNB(){
     background(255);
     image(pnb, width/2 - 400, height/2 - 400, 800, 800);
     image(pnbArray[index], width/2 - 400, height/2 - 400, 800, 800); 
+    image(noelani, width/2 - 500, height/2 - 365, 820, 820);
+    image(jerome, width/2 - 400, height/2 - 500, 800, 800);
+
     
 
 }
@@ -182,7 +208,8 @@ function drawBW(){
     noTint();
     image(bw, width/2 - 400, height/2 - 400, 800, 800);
     image(bwArray[index], width/2 - 400, height/2 - 400, 800, 800); 
-    
+    image(chasebeck, width/2 - 330, height/2 - 350, 800, 800);
+
     
 }
 
@@ -262,5 +289,3 @@ function mouseClicked(){
 
   
 }
-
-
